@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="seller">
+        <item></item>
+        <item>Neta-Li</item>
+        <item>Or</item>
+        <item>Inbar</item>
+    </string-array>
+</resources>
