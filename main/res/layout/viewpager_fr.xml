@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2FBEF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:background="#000000"
+        android:layout_marginBottom="7dp">
+
+        <Button
+            android:id="@+id/moveToAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:textSize="12dp"
+            android:background="#e6e6ff"
+            android:drawableTop="@drawable/ic_add_black_24dp"
+            android:paddingBottom="1dp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:textSize="12dp"
+            android:text="Search"
+            android:background="#e6e6ff"
+            android:drawableTop="@drawable/ic_search_black_24dp"
+            android:paddingBottom="1dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/moveToCalendar2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:text="Calender"
+            android:textSize="12dp"
+            android:background="#e6e6ff"
+            android:drawableTop="@drawable/ic_date_range_black_24dp"
+            android:paddingBottom="1dp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_tabs"
+        app:tabTextAppearance="@style/TabLayoutTextAppearance"
+        app:tabSelectedTextColor="@color/tab1"
+        app:tabTextColor="@color/tab2"
+        android:paddingBottom="10dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/search_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

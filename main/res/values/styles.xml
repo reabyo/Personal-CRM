@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">#A4A4A4</item>
+        <item name="android:layoutDirection">ltr</item>
+    </style>
+
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="ListViewRows">
+        <item name="android:divider">#A4A4A4</item>
+        <item name="android:dividerHeight">3dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="RowItems">
+        <item name="android:textSize">20dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+</resources>

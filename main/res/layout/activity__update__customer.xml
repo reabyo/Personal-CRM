@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity__update__customer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.crm_project.Activity_Update_Customer"
+    android:background="#F2FBEF">
+
+    <TextView
+        android:id="@+id/add_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Customer"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/dynamicUpdate"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update_saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:text="Save"
+        android:background="@drawable/button_style"
+        android:layout_gravity="center"/>
+</LinearLayout>

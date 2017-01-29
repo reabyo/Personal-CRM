@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="branch">
+        <item></item>
+        <item>Studio - Givataim</item>
+        <item>Azrieli - Tel Aviv</item>
+        <item>Rehovot</item>
+        <item>Other</item>
+    </string-array>
+</resources>
