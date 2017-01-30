@@ -12,7 +12,7 @@ The system based on SQLite database and located on the user's device.<br/>
 Search screen. <br/>
 Contain quick and advanced search.<br/>
 The quick search is faster way to find a client by name, phone number or email.<br/>
-The advanced search allows up to 5 different search options and provides the most accurate's result.<br/>
+The advanced search allows up to 5 different search options and provides the most accurate result.<br/>
 In addition, it can provide results from any selected field. <br/>
 <br/>
 Each client has a personal card which provides all the information about him.<br/>
