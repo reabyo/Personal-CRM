@@ -3,8 +3,11 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorAccent">#A4A4A4</item>
+        <item name="colorAccent">#e1e1d0</item>
         <item name="android:layoutDirection">ltr</item>
+        <item name="android:textColor">#eef7fc</item>
+        <item name="android:editTextColor">#eef7fc</item>
+        <item name="android:textColorHint">#eef7fc</item>
     </style>
 
     <style name="TabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
@@ -19,9 +22,8 @@
     </style>
 
     <style name="RowItems">
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">18dp</item>
         <item name="android:padding">3dp</item>
-        <item name="android:layout_marginLeft">3dp</item>
     </style>
 
     <style name="TextStyle">

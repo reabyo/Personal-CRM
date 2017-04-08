@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity__update__customer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.user.crm_project.Activity_Update_Customer"
-    android:background="#F2FBEF">
+    android:background="#26292e">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/logo"/>
 
     <TextView
         android:id="@+id/add_tittle"
@@ -14,11 +20,16 @@
         android:layout_height="wrap_content"
         android:text="Update Customer"
         android:textSize="20dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
         android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
         android:layout_weight="1">
 
         <ScrollView
@@ -42,6 +53,8 @@
         android:textAllCaps="false"
         android:textSize="15dp"
         android:text="Save"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
         android:background="@drawable/button_style"
         android:layout_gravity="center"/>
 </LinearLayout>

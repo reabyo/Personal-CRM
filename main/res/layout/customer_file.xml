@@ -2,112 +2,130 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_weight="1">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#000000"
-        android:weightSum="3">
-
-        <Button
-            android:id="@+id/customerFile_backButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Back"
-            android:textSize="12dp"
-            android:background="#e6e6ff"
-            android:drawableTop="@drawable/ic_backspace_black_24dp"
-            android:layout_marginRight="1dp"
-            android:layout_marginBottom="1dp"
-            android:textAllCaps="false" />
-
-        <Button
-            android:id="@+id/customerFile_updateButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Update"
-            android:textSize="12dp"
-            android:layout_weight="1"
-            android:background="#e6e6ff"
-            android:layout_marginRight="1dp"
-            android:layout_marginBottom="1dp"
-            android:drawableTop="@drawable/ic_update_black_24dp"
-            android:textAllCaps="false" />
-
-        <Button
-            android:id="@+id/customerFile_deleteButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Delete"
-            android:textSize="12dp"
-            android:background="#e6e6ff"
-            android:drawableTop="@drawable/ic_delete_black_24dp"
-            android:layout_marginBottom="1dp"
-            android:textAllCaps="false" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="500dp"
         android:orientation="vertical">
 
-        <ListView
-            android:id="@+id/customerFile_detailsList"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:dividerHeight="5dp"></ListView>
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/customerFile_backButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Back"
+                android:textSize="12dp"
+                android:background="#464952"
+                android:textColor="#eef7fc"
+                android:drawableTop="@drawable/ic_keyboard_backspace_white_24dp"
+                android:layout_marginRight="1dp"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/customerFile_updateButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Update"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:background="#464952"
+                android:textColor="#eef7fc"
+                android:layout_marginRight="1dp"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:drawableTop="@drawable/ic_update_white_24dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/customerFile_deleteButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:layout_weight="1"
+                android:text="Delete"
+                android:textSize="12dp"
+                android:background="#464952"
+                android:textColor="#eef7fc"
+                android:drawableTop="@drawable/ic_delete_white_24dp"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/customerFile_detailsList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="5dp"></ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/customerFile_callButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Call"
+                android:textSize="12dp"
+                android:background="#464952"
+                android:textColor="#eef7fc"
+                android:layout_marginRight="1dp"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:drawableTop="@drawable/ic_call_white_24dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/customerFile_smsButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SMS"
+                android:textSize="12dp"
+                android:background="#464952"
+                android:textColor="#eef7fc"
+                android:layout_marginRight="1dp"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:drawableTop="@drawable/ic_sms_white_24dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/customerFile_mailButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mail"
+                android:textSize="12dp"
+                android:background="#464952"
+                android:textColor="#eef7fc"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:drawableTop="@drawable/ic_mail_outline_white_24dp"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
 
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#000000"
-        android:weightSum="3">
-
-        <Button
-            android:id="@+id/customerFile_callButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Call"
-            android:textSize="12dp"
-            android:background="#e6e6ff"
-            android:layout_marginRight="1dp"
-            android:layout_marginTop="1dp"
-            android:drawableTop="@drawable/ic_call_black_24dp"
-            android:textAllCaps="false" />
-
-        <Button
-            android:id="@+id/customerFile_smsButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="SMS"
-            android:textSize="12dp"
-            android:background="#e6e6ff"
-            android:layout_marginRight="1dp"
-            android:layout_marginTop="1dp"
-            android:drawableTop="@drawable/ic_sms_black_24dp"
-            android:textAllCaps="false" />
-
-        <Button
-            android:id="@+id/customerFile_mailButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Mail"
-            android:textSize="12dp"
-            android:background="#e6e6ff"
-            android:layout_marginTop="1dp"
-            android:drawableTop="@drawable/ic_mail_outline_black_24dp"
-            android:textAllCaps="false" />
-
-    </LinearLayout>
-
 
 </LinearLayout>

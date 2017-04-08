@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Your mother's last name before marriage?"
+        android:paddingLeft="3dp"
+        android:textStyle="bold"
+        android:textColor="#26292e"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/securityQ_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="#26292e"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/questionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:text="Done"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

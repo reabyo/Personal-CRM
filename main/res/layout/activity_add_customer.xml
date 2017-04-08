@@ -2,16 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#F2FBEF"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="#26292e">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/logo"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="7dp"
-        android:background="#000000"
+        android:background="#ebebe0"
         android:weightSum="3">
 
         <Button
@@ -22,8 +29,9 @@
             android:layout_marginRight="1dp"
             android:layout_marginBottom="1dp"
             android:textSize="12dp"
-            android:background="#e6e6ff"
-            android:drawableTop="@drawable/ic_add_black_24dp"
+            android:background="#464952"
+            android:textColor="#eef7fc"
+            android:drawableTop="@drawable/ic_add_white_24dp"
             android:paddingBottom="1dp"
             android:textAllCaps="false" />
 
@@ -36,8 +44,9 @@
             android:layout_marginBottom="1dp"
             android:textSize="12dp"
             android:text="Search"
-            android:background="#e6e6ff"
-            android:drawableTop="@drawable/ic_search_black_24dp"
+            android:textColor="#eef7fc"
+            android:background="#464952"
+            android:drawableTop="@drawable/ic_search_white_24dp"
             android:paddingBottom="1dp"
             android:textAllCaps="false" />
 
@@ -49,8 +58,9 @@
             android:layout_weight="1"
             android:text="Calender"
             android:textSize="12dp"
-            android:background="#e6e6ff"
-            android:drawableTop="@drawable/ic_date_range_black_24dp"
+            android:background="#464952"
+            android:textColor="#eef7fc"
+            android:drawableTop="@drawable/ic_date_range_white_24dp"
             android:paddingBottom="1dp"
             android:textAllCaps="false" />
 
@@ -60,6 +70,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
         android:layout_marginBottom="5dp">
 
         <TextView
@@ -67,6 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add customer:"
+            android:textColor="#eef7fc"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -80,8 +93,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add fields"
-            android:layout_marginRight="2dp"
             android:background="@drawable/button_style"
+            android:textColor="#eef7fc"
             android:textAllCaps="false"
             android:textSize="14dp" />
 
@@ -90,6 +103,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
         android:layout_weight="1">
 
         <ScrollView
@@ -104,14 +119,16 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="7dp"
+                    android:layout_marginBottom="12dp"
                     android:background="@drawable/fields_style"
                     android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#BCF5A9"
+                        android:background="#464952"
+                        android:textColor="#eef7fc"
+                        android:layout_marginLeft="5dp"
                         android:text="Name: "
                         android:textSize="18dp"
                         android:textStyle="bold" />
@@ -128,15 +145,17 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="7dp"
+                    android:layout_marginBottom="12dp"
                     android:background="@drawable/fields_style"
                     android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#BCF5A9"
-                        android:text="Telephone: "
+                        android:background="#464952"
+                        android:text="Tel: "
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#eef7fc"
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
@@ -153,15 +172,17 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginBottom="12dp"
                     android:background="@drawable/fields_style"
                     android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#BCF5A9"
-                        android:text="Mail: "
+                        android:background="#464952"
+                        android:textColor="#eef7fc"
+                        android:layout_marginLeft="5dp"
+                        android:text="Email: "
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
@@ -177,9 +198,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="#000000"></LinearLayout>
+                    android:layout_marginBottom="12dp"
+                    android:background="#6ca1c9"></LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/dynamicView"
@@ -192,6 +212,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="15dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="18dp"
                     android:gravity="center"/>
 
             </LinearLayout>
@@ -205,8 +227,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/button_style"
-        android:layout_marginRight="2dp"
-        android:layout_marginLeft="2dp"
+        android:textColor="#eef7fc"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:text="Save details"
         android:textAllCaps="false" />
 
